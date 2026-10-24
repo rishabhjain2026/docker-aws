@@ -44,7 +44,7 @@ function App() {
     if (!userName || !editorReady || !editorRef.current) return;
 
     const provider = new SocketIOProvider(
-      "http://localhost:3000",
+      "/",
       "monaco",
       ydoc,
       { params: { username: userName } }
